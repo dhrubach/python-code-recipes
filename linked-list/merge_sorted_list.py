@@ -3,11 +3,8 @@
 # Difficulty Level : Easy
 # URL : https://leetcode.com/problems/merge-two-sorted-lists/
 ###############################################################
-
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from list_node import ListNode
+from utility import printList
 
 
 class MergeSortedList:
@@ -15,11 +12,11 @@ class MergeSortedList:
         if not l1 and not l2:
             """  return None if both inputs are invalid """
             return None
-        
+
         if not l1:
             """ l2 is the merged list in absense of l1 """
             return l2
-        
+
         if not l2:
             """ l1 is the merged list in absense of l2 """
             return l1
@@ -45,13 +42,17 @@ class MergeSortedList:
 
         return dummy.next
 
-
-def displayList(ln: ListNode):
-    i = 0
-    while ln is not None:
-        print(f"value at index {i} - {ln.val}")
-        ln = ln.next
-        i += 1
+    def mergeRecursion(self, l1: ListNode, l2: ListNode) -> ListNode:
+        if l1 == None:
+            return l2
+        elif l2 == None:
+            return l1
+        elif l1.val < l2.val:
+            l1.next = self.mergeRecursion(l1.next, l2)
+            return l1
+        else:
+            l2.next = self.mergeRecursion(l1, l2.next)
+            return l2
 
 
 if __name__ == "__main__":
@@ -59,16 +60,13 @@ if __name__ == "__main__":
     l1 = ListNode(3, l1)
     l1 = ListNode(1, l1)
 
-    print('sorted list 1')
-    displayList(l1)
-    
+    printList(l1, "sorted list 1")
+
     l2 = ListNode(6, None)
     l2 = ListNode(4, l2)
     l2 = ListNode(2, l2)
 
-    print('\nsorted list 2')
-    displayList(l2)
-    
-    print('\nmerged list')
+    printList(l2, "sorted list 2")
+
     sorted_list = MergeSortedList()
-    displayList(sorted_list.merge(l1, l2))
+    printList(sorted_list.merge(l1, l2), "merged list")
