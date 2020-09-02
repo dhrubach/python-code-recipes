@@ -1,7 +1,10 @@
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+################################################################
+#  queue implementation using linked list
+# methods implemented :
+#   enqueue (offer), dequeue(poll), peek, isFull, isEmpty, print
+################################################################
+
+from linked_list.list_node import ListNode
 
 
 class QueueWithLinkedList:
@@ -26,7 +29,7 @@ class QueueWithLinkedList:
         """ create a new list node """
         node = ListNode(val)
 
-        """ check if queue is empty 
+        """ check if queue is empty
             if true, then both head and tail will point to the same node
         """
         if self.isEmpty():
@@ -73,7 +76,7 @@ class QueueWithLinkedList:
             return
 
         out = ""
-        curr = head
+        curr = self.head
 
         while curr:
             out = out + " " + str(curr.val)

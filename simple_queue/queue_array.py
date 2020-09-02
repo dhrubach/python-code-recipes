@@ -1,8 +1,9 @@
 ###############################################################
 # simple queue implementation using []
-# methods implemented : 
+# methods implemented :
 #   enqueue (offer), dequeue(poll), peek, isFull, isEmpty
 ###############################################################
+
 
 class QueueWithArray:
     def __init__(self, size):
@@ -36,8 +37,8 @@ class QueueWithArray:
         return val
 
     def peek(self):
-        return self.data[self.size - 1]    
-    
+        return self.data[self.size - 1]
+
     def print(self) -> None:
         if self.isEmpty():
             print(f"queue is empty")
@@ -52,4 +53,3 @@ class QueueWithArray:
 
         print(out)
         return
-

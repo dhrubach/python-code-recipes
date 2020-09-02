@@ -1,5 +1,5 @@
-from queue.queue_array import QueueWithArray
-from queue.queue_linked_list import QueueWithLinkedList
+from simple_queue.queue_array import QueueWithArray
+from simple_queue.queue_linked_list import QueueWithLinkedList
 
 import unittest
 
