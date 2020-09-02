@@ -4,8 +4,8 @@
 # URL : https://leetcode.com/problems/odd-even-linked-list/
 ###############################################################
 
-from list_node import ListNode
-from utility import generateList, printList
+from linked_list.list_node import ListNode
+from linked_list.utility import generateList, printList
 
 
 class SingleLinkedList:
@@ -16,7 +16,7 @@ class SingleLinkedList:
         curr = head
         """ pointer to even elements in the list """
         eptr = ListNode()
-        
+
         """ pointer to odd elements in the list """
         odd = optr = ListNode()
 
@@ -33,14 +33,14 @@ class SingleLinkedList:
             optr = optr.next
 
         if curr:
-            """ in case of even elements in the list, add last element
-                to the even list
+            """in case of even elements in the list, add last element
+            to the even list
             """
             eptr.next = curr
             eptr = eptr.next
 
         optr.next = None
-        
+
         """ merge the 2 list into 1 """
         eptr.next = odd.next
 

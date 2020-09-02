@@ -5,11 +5,7 @@
 # Alternate cleaner solution found in the discussion forum
 ###############################################################
 
-class ListNode:
-    def __init__(self, val):
-        self.val = val
-        self.next = None
-
+from linked_list.list_node import ListNode
 
 class SingleLinkedList():
     def __init__(self):

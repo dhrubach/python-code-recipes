@@ -3,8 +3,8 @@
 # Difficulty Level : Easy
 # URL : https://leetcode.com/problems/merge-two-sorted-lists/
 ###############################################################
-from list_node import ListNode
-from utility import printList
+from linked_list.list_node import ListNode
+from linked_list.utility import printList
 
 
 class MergeSortedList:

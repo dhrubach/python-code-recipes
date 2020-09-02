@@ -4,12 +4,8 @@
 # URL : https://leetcode.com/problems/remove-linked-list-elements/
 ###############################################################
 
-
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-
+from linked_list.list_node import ListNode
+from linked_list.utility import printList
 
 class SingleLinkedList:
     def removeElements(self, head: ListNode, val: int):
@@ -30,14 +26,6 @@ class SingleLinkedList:
         return head
 
 
-def displayList(ln: ListNode):
-    i = 0
-    while ln is not None:
-        print(f"value at index {i} - {ln.val}")
-        ln = ln.next
-        i += 1
-
-
 if __name__ == "__main__":
     l = ListNode(5, None)
     l = ListNode(1, l)
@@ -46,9 +34,9 @@ if __name__ == "__main__":
     l = ListNode(1, l)
     l = ListNode(1, l)
 
-    displayList(l)
+    printList(l)
 
     print("\nlist after elements removed")
     linked_list = SingleLinkedList()
-    displayList(linked_list.removeElements(l, 1))
+    printList(linked_list.removeElements(l, 1))
 

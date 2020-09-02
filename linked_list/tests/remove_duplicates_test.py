@@ -1,6 +1,6 @@
-from list_node import ListNode
-from remove_duplicates import RemoveDuplicates
-from utility import printList
+from linked_list.list_node import ListNode
+from linked_list.remove_duplicates import RemoveDuplicates
+from linked_list.utility import printList
 
 import unittest
 

@@ -4,8 +4,8 @@
 # URL : https://leetcode.com/problems/linked-list-cycle-ii/
 ###############################################################
 
-from list_node import ListNode
-from utility import printList
+from linked_list.list_node import ListNode
+from linked_list.utility import printList
 
 
 class SingleLinkedList:
@@ -20,10 +20,10 @@ class SingleLinkedList:
         while fp and fp.next:
             """ move fast pointer by 2 steps """
             fp = fp.next.next
-            
+
             """ move slow pointer by 1 step """
             sp = sp.next
-            
+
             if fp == sp:
                 hasCycle = True
                 break
@@ -43,4 +43,3 @@ class SingleLinkedList:
             return fp
 
         return None
-

@@ -1,6 +1,6 @@
-import unittest
+from linked_list.single_linked_list import SingleLinkedList
 
-from single_linked_list import SingleLinkedList
+import unittest
 
 
 class SingleLinkedListTest(unittest.TestCase):

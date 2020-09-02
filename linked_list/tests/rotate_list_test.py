@@ -1,6 +1,6 @@
-from rotate_list import RotateList
-from list_node import ListNode
-from utility import printList
+from linked_list.rotate_list import RotateList
+from linked_list.list_node import ListNode
+from linked_list.utility import printList
 
 import unittest
 

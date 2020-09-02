@@ -10,8 +10,8 @@ class SingleLinkedList:
         self.node = None
 
     def get(self, index: int) -> None:
-        """ Get the value of the index-th node in the linked list. 
-            
+        """ Get the value of the index-th node in the linked list.
+
             If the index is invalid, return -1.
         """
 
@@ -32,9 +32,9 @@ class SingleLinkedList:
         return search_val
 
     def addAtHead(self, val: int) -> None:
-        """ Add a node of value 'val' before the first element of the linked list. 
-            
-            After the insertion, the new node will be the first node of the linked list.  
+        """ Add a node of value 'val' before the first element of the linked list.
+
+            After the insertion, the new node will be the first node of the linked list.
         """
 
         if self.head == None:
@@ -64,9 +64,9 @@ class SingleLinkedList:
             curr_tail["next"] = self.tail
 
     def addAtIndex(self, index: int, val: int) -> None:
-        """ Add a node of value 'val' before the index-th node in the linked list. 
-            
-            If index equals to the length of linked list, the node will be appended to the end of linked list. 
+        """ Add a node of value 'val' before the index-th node in the linked list.
+
+            If index equals to the length of linked list, the node will be appended to the end of linked list.
             If index is greater than the length, the node will not be inserted.
         """
 
@@ -136,7 +136,7 @@ class SingleLinkedList:
 
     def toString(self) -> None:
         """ Display snapshot of current linked list along with number of nodes.
-            
+
             Example :
                 value at node 0 - 84
                 value at node 1 - 2
@@ -162,7 +162,7 @@ class SingleLinkedList:
 
     def executeCommands(self, command: str, operands: list):
         """ Automate execution of large number of operations to test implementation.
-            
+
             Not part of main linked list implementation. Wrote this function
             to simulate large input test bed
         """

@@ -4,8 +4,8 @@
 # URL : https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
 ############################################################################
 
-from list_node import ListNode
-from utility import printList
+from linked_list.list_node import ListNode
+from linked_list.utility import printList
 
 
 class RemoveAllDuplicates:
@@ -20,41 +20,40 @@ class RemoveAllDuplicates:
 
         while curr:
             if curr.next and curr.val == curr.next.val:
-                """ if the next node is valid and has the same value as
-                    current node, skip that node
-                    
-                    set the duplicate flag
-                    
-                    keep repeating till all duplicates of a given val have been removed
+                """if the next node is valid and has the same value as
+                current node, skip that node
+
+                set the duplicate flag
+
+                keep repeating till all duplicates of a given val have been removed
                 """
                 isDuplicate = True
                 curr.next = curr.next.next
             else:
                 if isDuplicate:
-                    """ point prev pointer to the node after current to remove the last
-                        val of a duplicate set
+                    """point prev pointer to the node after current to remove the last
+                    val of a duplicate set
                     """
                     prev.next = curr.next
-                    
+
                     """ move head pointer if duplicates were removed from the beginning """
                     if head == curr:
                         head = prev.next
-                    
+
                     """ move the current pointer """
                     curr = curr.next
                 else:
                     """ move previous and current pointer when no duplicates """
                     prev = curr
                     curr = curr.next
-                
-                """  reset duplicate flag """    
+
+                """  reset duplicate flag """
                 isDuplicate = False
 
         return head
 
     def deleteDuplicatesV2(self, head: ListNode) -> ListNode:
-        """ alternate solution from leetcode submissions
-        """
+        """alternate solution from leetcode submissions"""
         if not head:
             return head
 
@@ -72,4 +71,3 @@ class RemoveAllDuplicates:
                 head = head.next
 
         return dummy.next
-

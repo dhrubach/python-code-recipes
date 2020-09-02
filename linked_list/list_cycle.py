@@ -4,8 +4,8 @@
 # URL : https://leetcode.com/problems/linked-list-cycle/
 ###############################################################
 
-from list_node import ListNode
-from utility import printList
+from linked_list.list_node import ListNode
+from linked_list.utility import printList
 
 
 class SingleLinkedList:
@@ -22,4 +22,3 @@ class SingleLinkedList:
                 return True
 
         return False
-

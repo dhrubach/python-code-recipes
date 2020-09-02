@@ -4,8 +4,8 @@
 # URL : https://leetcode.com/problems/palindrome-linked-list/
 ###############################################################
 
-from list_node import ListNode
-from utility import printList
+from linked_list.list_node import ListNode
+from linked_list.utility import printList
 
 
 class SingleLinkedList:
@@ -20,7 +20,7 @@ class SingleLinkedList:
 
         """ split the list into 2 equal halves"""
         lhalf, rhalf = self.splitList(head)
-        
+
         """ reverse the right-half of the list """
         rhalf = self.reverseList(rhalf)
 
@@ -53,7 +53,7 @@ class SingleLinkedList:
                     break
 
             q = q.next
-        
+
         return (lh, rh)
 
     def reverseList(self, head: ListNode) -> ListNode:
@@ -66,8 +66,8 @@ class SingleLinkedList:
             cur = nex
 
         return pre
-        
-    
+
+
 if __name__ == "__main__":
     l = ListNode("2", None)
     l = ListNode("3", l)

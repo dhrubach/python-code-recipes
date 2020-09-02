@@ -3,7 +3,7 @@
 # Difficulty Level : Medium
 # URL : https://leetcode.com/problems/rotate-list/
 ##################################################
-from list_node import ListNode
+from linked_list.list_node import ListNode
 
 
 class RotateList:
@@ -28,17 +28,17 @@ class RotateList:
 
         """ calculate the number of steps to reach the node which will
             be the new tail after rotation
-            
+
             if k is a multiple of length, then the list will remain as is
         """
         k = k % length
 
-        """ move the tail to the new tail node 
-            example : 
+        """ move the tail to the new tail node
+            example :
                 1 -> 2 -> 3 -> 4 -> 5 -> back to head
                 length 5
                 k = 2
-                
+
                 3 steps are required to reach 3
         """
         for _ in range(length - k):
@@ -51,4 +51,3 @@ class RotateList:
         tail.next = None
 
         return head
-

@@ -1,4 +1,4 @@
-from list_node import ListNode
+from linked_list.list_node import ListNode
 from random import randint
 
 

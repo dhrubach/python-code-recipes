@@ -4,10 +4,8 @@
 # URL : https://leetcode.com/problems/reverse-linked-list/
 ###############################################################
 
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from linked_list.list_node import ListNode
+from linked_list.utility import printList
 
 
 class SingleLinkedList:
@@ -50,14 +48,6 @@ class SingleLinkedList:
         return pre
 
 
-def displayList(ln: ListNode):
-    i = 0
-    while ln is not None:
-        print(f"value at index {i} - {ln.val}")
-        ln = ln.next
-        i += 1
-
-
 if __name__ == "__main__":
     l1 = ListNode(5, None)
     l1 = ListNode(4, l1)
@@ -66,12 +56,12 @@ if __name__ == "__main__":
     l1 = ListNode(1, l1)
 
     print(f"original linked list")
-    displayList(l1)
+    printList(l1)
 
     print(f"\nreversed linked list")
     sll = SingleLinkedList()
     reversed_list = sll.reverse(l1)
-    displayList(reversed_list)
+    printList(reversed_list)
 
     print(f"\nreversed linked list - version two")
-    displayList(sll.reverse_v2(reversed_list))
+    printList(sll.reverse_v2(reversed_list))

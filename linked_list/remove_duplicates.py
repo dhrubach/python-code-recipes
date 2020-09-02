@@ -4,8 +4,8 @@
 # URL : https://leetcode.com/problems/remove-duplicates-from-sorted-list/
 ###############################################################
 
-from list_node import ListNode
-from utility import printList
+from linked_list.list_node import ListNode
+from linked_list.utility import printList
 
 
 class RemoveDuplicates:
@@ -20,17 +20,16 @@ class RemoveDuplicates:
         while curr and curr.next:
             """ get the next node pointed by the current pointer """
             nex = curr.next
-            
+
             if curr.val == nex.val:
-                """ if the values of 2 adjacent nodes are equal, skip the next node. 
-                    set the current pointer to point at a node after the immediate next node 
+                """if the values of 2 adjacent nodes are equal, skip the next node.
+                set the current pointer to point at a node after the immediate next node
                 """
                 curr.next = nex.next
             else:
-                """ move the current pointer to the next node if not duplicate.
-                    NOTE - move the current pointer only when the values are unique
+                """move the current pointer to the next node if not duplicate.
+                NOTE - move the current pointer only when the values are unique
                 """
                 curr = curr.next
 
         return head
-
