@@ -1,3 +1,9 @@
+####################################################################
+# LeetCode Problem Number : 589
+# Difficulty Level : Easy
+# URL : https://leetcode.com/problems/n-ary-tree-preorder-traversal/
+####################################################################
+
 from binary_tree.node import Node
 
 
@@ -34,11 +40,11 @@ class PreorderTreeTraversal:
             res.append(node.val)
 
             if node.children:
-                """ reverse the order of children to iterate from left to right
+                """reverse the order of children to iterate from left to right
 
-                    without it, last children in a level will be popped out of
-                    the stack first in line 33 above resulting in right -> left
-                    traversal
+                without it, last children in a level will be popped out of
+                the stack first in line 33 above resulting in right -> left
+                traversal
                 """
                 for ch in reversed(node.children):
                     stack.append(ch)
