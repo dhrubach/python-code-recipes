@@ -1,7 +1,7 @@
 # python-code-recipes
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-![Python application](https://github.com/dhrubach/python-code-recipes/workflows/Python%20application/badge.svg)
+![Build](https://github.com/dhrubach/python-code-recipes/workflows/Python%20application/badge.svg)
 
 Collection of data structures and algorithms in python.
 
