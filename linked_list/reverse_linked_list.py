@@ -55,13 +55,10 @@ if __name__ == "__main__":
     l1 = ListNode(2, l1)
     l1 = ListNode(1, l1)
 
-    print(f"original linked list")
-    printList(l1)
+    printList(l1, "original linked list")
 
-    print(f"\nreversed linked list")
     sll = SingleLinkedList()
     reversed_list = sll.reverse(l1)
-    printList(reversed_list)
+    printList(reversed_list, "\nreversed linked list")
 
-    print(f"\nreversed linked list - version two")
-    printList(sll.reverse_v2(reversed_list))
+    printList(sll.reverse_v2(reversed_list), "\nreversed linked list - version two")

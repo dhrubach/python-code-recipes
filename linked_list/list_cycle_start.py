@@ -5,7 +5,6 @@
 ###############################################################
 
 from linked_list.list_node import ListNode
-from linked_list.utility import printList
 
 
 class SingleLinkedList:

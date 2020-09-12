@@ -7,6 +7,7 @@
 from linked_list.list_node import ListNode
 from linked_list.utility import printList
 
+
 class SingleLinkedList:
     def removeElements(self, head: ListNode, val: int):
         if not head:
@@ -34,9 +35,7 @@ if __name__ == "__main__":
     l = ListNode(1, l)
     l = ListNode(1, l)
 
-    printList(l)
+    printList(l, "original list")
 
-    print("\nlist after elements removed")
     linked_list = SingleLinkedList()
-    printList(linked_list.removeElements(l, 1))
-
+    printList(linked_list.removeElements(l, 1), "\nlist after elements removed")

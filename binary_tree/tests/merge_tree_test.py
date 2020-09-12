@@ -1,6 +1,4 @@
 from binary_tree.merge_tree import BinaryTreeMerge
-from binary_search_tree.tree_node import TreeNode
-
 from binarytree import build
 
 
@@ -27,4 +25,4 @@ class TestBinaryMergeTree:
 
         assert ans.val == 3
         assert ans.left.left.val == 5
-        assert ans.right.left == None
+        assert ans.right.left is None

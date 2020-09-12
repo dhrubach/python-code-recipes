@@ -23,7 +23,8 @@ class ArrayPartition:
             l, r = l + 2, r - 2
 
             """ when both pointers point at the same element,
-                we have reached the mid-point. Add the current element to the result
+                we have reached the mid-point. Add the current element
+                to the result
             """
             sum += sn[l] if l == r else 0
 
@@ -34,4 +35,3 @@ if __name__ == "__main__":
     p = ArrayPartition()
     print(p.arrayPairSum([1, 5, 2, 6, 4, 8, 9, 3, 7, 10]))
     print(p.arrayPairSum([7, 3, 1, 0, 0, 6]))
-

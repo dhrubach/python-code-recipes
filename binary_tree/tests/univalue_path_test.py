@@ -1,5 +1,4 @@
 from binary_tree.univalue_path import LongestUnivaluePath
-from binary_search_tree.tree_node import TreeNode
 from binarytree import build
 
 

@@ -1,7 +1,7 @@
 ################################################################
-#  queue implementation using linked list
+# queue implementation using linked list
 # methods implemented :
-#   enqueue (offer), dequeue(poll), peek, isFull, isEmpty, print
+# enqueue (offer), dequeue(poll), peek, isFull, isEmpty, print
 ################################################################
 
 from linked_list.list_node import ListNode
@@ -23,7 +23,7 @@ class QueueWithLinkedList:
     def enqueue(self, val) -> bool:
         """ return false if queue is already full """
         if self.isFull():
-            print(f"queue is full")
+            print("queue is full")
             return False
 
         """ create a new list node """
@@ -50,7 +50,7 @@ class QueueWithLinkedList:
     def dequeue(self) -> int:
         """ return -1 if queue is empty """
         if self.isEmpty():
-            print(f"queue is empty")
+            print("queue is empty")
             return -1
 
         """ return value from top of the list and move
@@ -64,7 +64,7 @@ class QueueWithLinkedList:
 
     def peek(self) -> int:
         if self.isEmpty():
-            print(f"queue is empty")
+            print("queue is empty")
             return -1
 
         """ return the value from the beginning of the list """
@@ -72,7 +72,7 @@ class QueueWithLinkedList:
 
     def print(self) -> None:
         if self.isEmpty():
-            print(f"queue is empty")
+            print("queue is empty")
             return
 
         out = ""

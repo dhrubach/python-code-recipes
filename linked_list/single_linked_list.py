@@ -15,7 +15,7 @@ class SingleLinkedList:
             If the index is invalid, return -1.
         """
 
-        if self.head == None:
+        if not self.head:
             return -1
 
         curr = self.head
@@ -37,7 +37,7 @@ class SingleLinkedList:
             After the insertion, the new node will be the first node of the linked list.
         """
 
-        if self.head == None:
+        if not self.head:
             self.node = {"data": val, "next": None}
         else:
             self.node = {"data": val, "next": self.head}
@@ -47,7 +47,7 @@ class SingleLinkedList:
         """
             Reset tail if this is the first node
         """
-        if self.tail == None:
+        if not self.tail:
             self.tail = self.head
 
     def addAtTail(self, val: int) -> None:
@@ -56,7 +56,7 @@ class SingleLinkedList:
 
         self.node = {"data": val, "next": None}
 
-        if self.head == None:
+        if not self.head:
             self.head = self.tail = self.node
         else:
             curr_tail = self.tail
@@ -71,7 +71,7 @@ class SingleLinkedList:
         """
 
         """ empty linked list """
-        if self.head == None and index == 0:
+        if self.head is None and index == 0:
             self.head = self.tail = {"data": val, "next": None}
             return
 
@@ -105,7 +105,7 @@ class SingleLinkedList:
         """
 
         """ empty linked list """
-        if self.head == None:
+        if self.head is None:
             return
 
         """ delete the current head """
@@ -113,7 +113,7 @@ class SingleLinkedList:
             self.head = self.head["next"]
 
             """ reset tail pointer if there are no nodes present """
-            if self.head == None:
+            if self.head is None:
                 self.tail = None
 
             return
@@ -144,14 +144,14 @@ class SingleLinkedList:
                 value at tail node - 42
                 total number of nodes in the linked list - 4
         """
-        if self.head == None:
-            print(f"linked list is empty")
+        if self.head is None:
+            print("linked list is empty")
             return
 
         curr = self.head
         i = 0
 
-        while curr["next"] != None:
+        while curr["next"] is not None:
             print(f"value at node {i} - {curr['data']}")
             i += 1
             curr = curr["next"]
@@ -401,4 +401,3 @@ if __name__ == "__main__":
         print("\n")
 
     print(result)
-

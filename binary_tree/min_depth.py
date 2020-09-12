@@ -39,7 +39,7 @@ class BinaryTree:
 
     # BFS -> runtime 40ms, memory 14.8MB
     def minDepth_bfs(self, root: TreeNode) -> int:
-        if root == None:
+        if root is None:
             return 0
 
         """ depth at root level -> 1 """

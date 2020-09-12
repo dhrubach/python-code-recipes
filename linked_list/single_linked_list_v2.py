@@ -7,7 +7,8 @@
 
 from linked_list.list_node import ListNode
 
-class SingleLinkedList():
+
+class SingleLinkedList:
     def __init__(self):
         """
         Initialize your data structure here.

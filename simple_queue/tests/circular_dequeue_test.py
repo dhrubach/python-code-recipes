@@ -1,18 +1,16 @@
 from simple_queue.circular_dequeue import CircularDeQueue
 
-import pytest
-
 
 class TestCircularDeQueue:
     def test_is_empty(self):
         cq = CircularDeQueue(3)
-        assert cq.isEmpty() == True
+        assert cq.isEmpty() is True
 
         cq.insertLast(1)
-        assert cq.isEmpty() == False
+        assert cq.isEmpty() is False
 
         cq.deleteFront()
-        assert cq.isEmpty() == True
+        assert cq.isEmpty() is True
 
     def test_is_full(self):
         cq = CircularDeQueue(3)
@@ -20,10 +18,10 @@ class TestCircularDeQueue:
         cq.insertLast(1)
         cq.insertLast(2)
         cq.insertFront(3)
-        assert cq.isFull() == True
+        assert cq.isFull() is True
 
         cq.deleteLast()
-        assert cq.isFull() == False
+        assert cq.isFull() is False
 
     def test_is_front(self):
         cq = CircularDeQueue(3)
@@ -50,9 +48,9 @@ class TestCircularDeQueue:
         cq.insertFront(2)
         cq.insertLast(3)
 
-        assert cq.insertLast(4) == False
+        assert cq.insertLast(4) is False
         assert cq.getRear() == 3
-        assert cq.isFull() == True
+        assert cq.isFull() is True
 
         cq.deleteFront()
         cq.insertFront(4)

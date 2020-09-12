@@ -7,7 +7,7 @@ class TestBinarySearchTree:
         bst = BinarySearchTree()
         ans = bst.searchBST(None, 10)
 
-        assert ans == None
+        assert ans is None
 
     def test_root_node(self):
         bst = BinarySearchTree()
@@ -43,4 +43,4 @@ class TestBinarySearchTree:
 
         ans = bst.searchBST(ip, 5)
 
-        assert ans == None
+        assert ans is None

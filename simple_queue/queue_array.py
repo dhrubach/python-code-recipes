@@ -19,7 +19,7 @@ class QueueWithArray:
 
     def enqueue(self, val) -> bool:
         if self.isFull():
-            print(f"queue is full")
+            print("queue is full")
             return False
 
         self.data.insert(0, val)
@@ -28,7 +28,7 @@ class QueueWithArray:
 
     def dequeue(self):
         if self.isEmpty():
-            print(f"queue is empty")
+            print("queue is empty")
             return -1
 
         val = self.data.pop()
@@ -41,7 +41,7 @@ class QueueWithArray:
 
     def print(self) -> None:
         if self.isEmpty():
-            print(f"queue is empty")
+            print("queue is empty")
             return
 
         out = ""

@@ -1,7 +1,7 @@
 from binary_search_tree.range_sum_bst import RangeSumBST
 from binary_search_tree.tree_node import TreeNode
 
-from binarytree import build, tree
+from binarytree import build
 
 
 class TestRangeSumBST:

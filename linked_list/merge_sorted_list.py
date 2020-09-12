@@ -43,9 +43,9 @@ class MergeSortedList:
         return dummy.next
 
     def mergeRecursion(self, l1: ListNode, l2: ListNode) -> ListNode:
-        if l1 == None:
+        if l1 is None:
             return l2
-        elif l2 == None:
+        elif l2 is None:
             return l1
         elif l1.val < l2.val:
             l1.next = self.mergeRecursion(l1.next, l2)

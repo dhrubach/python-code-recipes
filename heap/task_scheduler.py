@@ -84,4 +84,3 @@ if __name__ == "__main__":
     tsc = TaskScheduler()
     ans = tsc.leastInterval(["A", "B", "A", "C", "A", "D", "E"], 2)
     print(ans)
-
