@@ -3,6 +3,9 @@
 # Difficulty Level : Medium
 # URL : https://leetcode.com/problems/kth-largest-element-in-an-array/
 ######################################################################
+from heapq import heapify, heappop
+
+
 class KLargestElement:
     def find_bubble_sort(self, nums: [int], k: int) -> int:
         """ using bubble sort
@@ -30,3 +33,30 @@ class KLargestElement:
 
         """ return kth largest element from the end """
         return nums[len(nums) - k]
+
+    def find_heap(self, nums: [int], k: int) -> int:
+        """ using heap
+            complexity : O(n + k log n)
+                -> O(n) for creating the heap
+                -> O(k logn) for popping 'k' elements
+            space complecity : O(n)
+        """
+        if not nums:
+            return None
+
+        """ heapq.heapify, by default, will create a min-heap.
+
+            Since we are looking for kth largest, multiply each
+            element by -1 such that the original largest element
+            becomes the root node. This will reduce the number of
+            pop operations necessary to reach the kth largest element.
+        """
+        heap = [-num for num in nums]
+        heapify(heap)
+
+        """ pop `k-1` elements from the heap """
+        for _ in range(k - 1):
+            heappop(heap)
+
+        """ root node is the answer. multiply by -1. """
+        return -heappop(heap)
