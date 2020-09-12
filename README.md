@@ -2,6 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![Build](https://github.com/dhrubach/python-code-recipes/workflows/Python%20application/badge.svg)
+[![codecov](https://codecov.io/gh/dhrubach/python-code-recipes/branch/master/graph/badge.svg)](https://codecov.io/gh/dhrubach/python-code-recipes)
 
 Collection of data structures and algorithms in python.
 
