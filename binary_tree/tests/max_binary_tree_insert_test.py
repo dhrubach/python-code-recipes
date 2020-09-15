@@ -7,7 +7,7 @@ class TestMaxBinaryTree:
         mbt = MaxBinaryTree()
         ans = mbt.construct(None, 3)
 
-        assert ans is None
+        assert ans.val == 3
 
     def test_single_node(self):
         mbt = MaxBinaryTree()
