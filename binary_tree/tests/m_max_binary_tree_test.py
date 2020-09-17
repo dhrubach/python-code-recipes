@@ -1,4 +1,4 @@
-from binary_tree.max_binary_tree import MaxBinaryTree
+from binary_tree.m_max_binary_tree import MaxBinaryTree
 
 
 class TestMaxBinaryTree:

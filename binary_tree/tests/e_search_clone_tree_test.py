@@ -1,4 +1,4 @@
-from binary_tree.search_clone_tree import BinaryTreeCloneSearch
+from binary_tree.e_search_clone_tree import BinaryTreeCloneSearch
 from binary_search_tree.tree_node import TreeNode
 from binarytree import build
 

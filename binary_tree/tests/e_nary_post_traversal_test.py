@@ -1,4 +1,4 @@
-from binary_tree.nary_post_traversal import PostorderTreeTraversal
+from binary_tree.e_nary_post_traversal import PostorderTreeTraversal
 from binary_tree.node import Node
 
 

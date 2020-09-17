@@ -1,4 +1,4 @@
-from binary_tree.merge_tree import BinaryTreeMerge
+from binary_tree.e_merge_tree import BinaryTreeMerge
 from binarytree import build
 
 

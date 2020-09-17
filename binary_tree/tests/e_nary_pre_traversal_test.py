@@ -1,4 +1,4 @@
-from binary_tree.nary_pre_traversal import PreorderTreeTraversal
+from binary_tree.e_nary_pre_traversal import PreorderTreeTraversal
 from binary_tree.node import Node
 
 

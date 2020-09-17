@@ -1,4 +1,4 @@
-from binary_tree.max_depth import BinaryTree
+from binary_tree.e_max_depth import BinaryTree
 from binarytree import build
 
 

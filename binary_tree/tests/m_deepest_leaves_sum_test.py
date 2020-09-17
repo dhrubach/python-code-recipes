@@ -1,4 +1,4 @@
-from binary_tree.deepest_leaves_sum import DeepestLeavesSum
+from binary_tree.m_deepest_leaves_sum import DeepestLeavesSum
 from binary_search_tree.tree_node import TreeNode
 from binarytree import build
 
