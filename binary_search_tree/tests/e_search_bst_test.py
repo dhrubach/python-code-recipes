@@ -1,4 +1,4 @@
-from binary_search_tree.search_bst import BinarySearchTree
+from binary_search_tree.e_search_bst import BinarySearchTree
 from binarytree import build
 
 
