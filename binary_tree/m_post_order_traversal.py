@@ -27,7 +27,7 @@ class BinaryTree:
         """ return visited node + child nodes """
         return res
 
-    def postorderTraversal(self, root: TreeNode) -> [int]:
+    def postOrderIterative(self, root: TreeNode) -> [int]:
         if not root:
             return []
 
@@ -63,3 +63,26 @@ class BinaryTree:
                 ret.append(cur.val)
 
         return ret
+
+    # runtime --> 54.35%, memory --> 5.09%
+    def postOrderIterativeReverse(self, root: TreeNode) -> [int]:
+        if not root:
+            return []
+
+        res, stack = [], [root]
+
+        while stack:
+            cur = stack.pop()
+
+            if cur:
+                """ visit the nodes in reverse order
+                    i.e. node -> right child node -> left child node
+
+                    similar to right-first pre-order traversal
+                """
+                res.append(cur.val)
+                stack.append(cur.left)
+                stack.append(cur.right)
+
+        """ reversed result will give post-order traversal """
+        return res[::-1]

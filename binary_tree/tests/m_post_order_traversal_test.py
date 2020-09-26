@@ -7,7 +7,8 @@ class TestBinaryTree:
         bt = BinaryTree()
 
         assert bt.postOrderRecursive(None) == []
-        assert bt.postorderTraversal(None) == []
+        assert bt.postOrderIterative(None) == []
+        assert bt.postOrderIterativeReverse(None) == []
 
     def test_lc_data_1(self):
         bt = BinaryTree()
@@ -16,7 +17,10 @@ class TestBinaryTree:
         ans = bt.postOrderRecursive(root)
         assert ans == [3, 2, 1]
 
-        ans = bt.postorderTraversal(root)
+        ans = bt.postOrderIterative(root)
+        assert ans == [3, 2, 1]
+
+        ans = bt.postOrderIterativeReverse(root)
         assert ans == [3, 2, 1]
 
     def test_lc_data_2(self):
@@ -26,7 +30,10 @@ class TestBinaryTree:
         ans = bt.postOrderRecursive(root)
         assert ans == [1]
 
-        ans = bt.postorderTraversal(root)
+        ans = bt.postOrderIterative(root)
+        assert ans == [1]
+
+        ans = bt.postOrderIterativeReverse(root)
         assert ans == [1]
 
     def test_lc_data_3(self):
@@ -36,5 +43,8 @@ class TestBinaryTree:
         ans = bt.postOrderRecursive(root)
         assert ans == [2, 1, 4, 5, 9, 15, 7, 20, 3]
 
-        ans = bt.postorderTraversal(root)
+        ans = bt.postOrderIterative(root)
+        assert ans == [2, 1, 4, 5, 9, 15, 7, 20, 3]
+
+        ans = bt.postOrderIterativeReverse(root)
         assert ans == [2, 1, 4, 5, 9, 15, 7, 20, 3]
