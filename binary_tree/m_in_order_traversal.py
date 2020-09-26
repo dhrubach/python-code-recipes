@@ -8,13 +8,13 @@ from binary_search_tree.tree_node import TreeNode
 
 class BinaryTree:
     # runtime -> 93.58%, memory -> 63.59%
-    def inorderTraversal(self, root: TreeNode) -> [int]:
+    def inOrderIterative(self, root: TreeNode) -> [int]:
         res = []
         stack = []
 
         while root or stack:
-            """visit a node and record it into stack
-            visit left child node, if one exists
+            """ visit a node and record it into stack
+                visit left child node, if one exists
             """
             while root:
                 stack.append(root)
@@ -31,7 +31,7 @@ class BinaryTree:
         return res
 
     # runtime -> 93.58%, memory -> 63.59%
-    def inorderTraversalRecursive(self, root: TreeNode) -> [int]:
+    def inOrderRecursive(self, root: TreeNode) -> [int]:
         if not root:
             return []
 
@@ -43,8 +43,8 @@ class BinaryTree:
             visit node
             visit right sub-tree
         """
-        res += self.inorderTraversalRecursive(root.left)
+        res += self.inOrderRecursive(root.left)
         res.append(root.val)
-        res += self.inorderTraversalRecursive(root.right)
+        res += self.inOrderRecursive(root.right)
 
         return res
