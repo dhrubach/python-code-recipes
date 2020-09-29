@@ -7,6 +7,14 @@ from binary_search_tree.tree_node import TreeNode
 
 
 class BinaryTree:
+    """pseudo-palindromic path mean that it has all occurunces of digits even, may be except one: like 11223 can be written as 12321
+    and 111444 can not, because it has two digits with odd occurences. So, for each leaf we need to evaluate occurences of all
+    digits and count it only if number of odd occurences is <=1.
+
+    time complexity -> O(N)
+    space complecity -> O(K+H), K -> number of elements, H -> height of a tree
+    """
+
     # runtime -> 97.02%, memory -> 7.05%
     def pseudoPalindromicPaths(self, root: TreeNode) -> int:
         def dfs(root, count=0):
