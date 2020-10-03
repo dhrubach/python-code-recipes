@@ -1,8 +1,8 @@
-###############################################################
-# LeetCode Problem Number : 139
+#########################################################
+# LeetCode Problem Number : 1600
 # Difficulty Level : Medium
-# URL : https://leetcode.com/problems/sum-root-to-leaf-numbers/
-###############################################################
+# URL : https://leetcode.com/problems/throne-inheritance/
+#########################################################
 from collections import defaultdict
 from typing import List
 

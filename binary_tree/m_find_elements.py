@@ -1,7 +1,7 @@
 ################################################################################
-# LeetCode Problem Number : 1315
+# LeetCode Problem Number : 1261
 # Difficulty Level : Medium
-# URL : https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/
+# URL : https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/
 ################################################################################
 from binary_search_tree.tree_node import TreeNode
 

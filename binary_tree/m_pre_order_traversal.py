@@ -1,7 +1,7 @@
 ######################################################################
-# LeetCode Problem Number : 145
+# LeetCode Problem Number : 144
 # Difficulty Level : Medium
-# URL : https://leetcode.com/problems/binary-tree-postorder-traversal/
+# URL : https://leetcode.com/problems/binary-tree-preorder-traversal/
 ######################################################################
 from binary_search_tree.tree_node import TreeNode
 
