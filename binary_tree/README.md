@@ -38,3 +38,4 @@
 -   [Pseudo Palindromic Paths in a Binary Tree](https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/)
 -   [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
 -   [Throne Inheritance](https://leetcode.com/problems/throne-inheritance/)
+-   [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/)
