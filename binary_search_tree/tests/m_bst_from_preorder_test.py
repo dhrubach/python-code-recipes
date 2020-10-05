@@ -1,4 +1,4 @@
-from binary_tree.m_bst_from_preorder import BstFromPreOrder
+from binary_search_tree.m_bst_from_preorder import BstFromPreOrder
 
 
 class TestBstFromPreOrder:

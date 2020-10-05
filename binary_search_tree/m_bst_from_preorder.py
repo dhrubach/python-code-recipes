@@ -4,11 +4,12 @@
 # URL : https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/
 ###########################################################################################
 from binary_search_tree.tree_node import TreeNode
+from typing import List
 
 
 class BstFromPreOrder:
     # runtime -> 93.32%, memory -> 72.69%
-    def create(self, preorder: [int]) -> TreeNode:
+    def create(self, preorder: List[int]) -> TreeNode:
         if not preorder or not len(preorder):
             return None
 
@@ -40,7 +41,7 @@ class BstFromPreOrder:
 
         return root
 
-    def create_inorder(self, preorder: [int]) -> TreeNode:
+    def create_inorder(self, preorder: List[int]) -> TreeNode:
         """sorting a pre-order traversal will give in-order traversal
         example :
             preorder -> [18, 9, 6, 3, 15, 12, 27, 24, 21, 30]

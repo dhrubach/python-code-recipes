@@ -4,11 +4,12 @@
 # URL : https://leetcode.com/problems/all-elements-in-two-binary-search-trees/
 ##############################################################################
 from binary_search_tree.tree_node import TreeNode
+from typing import List
 
 
 class BinarySearchTree:
     # runtime -> 23.20%, memory -> 54.83%
-    def getAllElements(self, root1: TreeNode, root2: TreeNode) -> [int]:
+    def getAllElements(self, root1: TreeNode, root2: TreeNode) -> List[int]:
         if not root1 and not root2:
             return []
 
@@ -22,7 +23,7 @@ class BinarySearchTree:
         arr += self.generateElement(root2)
         return sorted(arr)
 
-    def generateElement(self, root: TreeNode) -> [int]:
+    def generateElement(self, root: TreeNode) -> List[int]:
         if not root:
             return []
 
@@ -39,7 +40,7 @@ class BinarySearchTree:
         return arr
 
     # runtime -> 91.53%, memory -> 17.58%
-    def getAllElements_dfs(self, root1: TreeNode, root2: TreeNode) -> [int]:
+    def getAllElements_dfs(self, root1: TreeNode, root2: TreeNode) -> List[int]:
         output = []
 
         def dfs(node):
