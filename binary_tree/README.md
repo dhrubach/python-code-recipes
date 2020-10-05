@@ -19,7 +19,6 @@
 
 ---
 
--   [Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/)
 -   [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 -   [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
 
@@ -30,7 +29,7 @@
 -   [Find Elements in a Contaminated Tree](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/)
 -   [Flip Equivalent Binary Trees](https://leetcode.com/problems/flip-equivalent-binary-trees/)
 -   [All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/)
--   [Number of Good Lead Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/)
+-   [Number of Good Leaf Nodes Pairs](https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/)
 -   [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)
 -   [Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii/)
 -   [Minimum Time to Collect All Apples in a Tree](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/)
