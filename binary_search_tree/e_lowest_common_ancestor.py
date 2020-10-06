@@ -7,6 +7,7 @@ from binary_search_tree.tree_node import TreeNode
 
 
 class BinarySearchTree:
+    # runtime -> 78.79%, memory -> 10.5%
     def lowestCommonAncestor(
         self, root: TreeNode, p: TreeNode, q: TreeNode
     ) -> TreeNode:
@@ -34,12 +35,13 @@ class BinarySearchTree:
 
         return root
 
-    def lowestCommonAncestorRecirsive(
+    # runtime -> 97%, memory -> 10.64%
+    def lowestCommonAncestorRecursive(
         self, root: TreeNode, p: TreeNode, q: TreeNode
     ) -> TreeNode:
         if root.val > p.val and root.val > q.val:
-            root = self.lowestCommonAncestorRecirsive(root.left, p, q)
+            root = self.lowestCommonAncestorRecursive(root.left, p, q)
         elif root.val < p.val and root.val < q.val:
-            root = self.lowestCommonAncestorRecirsive(root.right, p, q)
+            root = self.lowestCommonAncestorRecursive(root.right, p, q)
 
         return root
