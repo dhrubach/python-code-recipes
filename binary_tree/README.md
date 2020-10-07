@@ -39,4 +39,5 @@
 -   [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
 -   [Throne Inheritance](https://leetcode.com/problems/throne-inheritance/)
 -   [Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/)
--   [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+-   [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)
+-   [Path Sum II](https://leetcode.com/problems/path-sum-ii/)
