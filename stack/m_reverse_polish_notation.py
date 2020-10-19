@@ -28,8 +28,14 @@ class ReversePolishNotation:
                 else:
                     t = op2 * op1
 
+                """ store current result in stack so that
+                    it can used in the next operation
+                """
                 stack.append(t)
             else:
                 stack.append(int(tk))
 
+        """ after processing all tokens in the expression correctly, there
+            should only be 1 item left on the stack
+        """
         return stack[0]

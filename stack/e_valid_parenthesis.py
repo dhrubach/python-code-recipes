@@ -15,6 +15,10 @@ class ValidParenthesis:
             if ch in open_brackets:
                 stack.append(ch)
             else:
+                """cannot get to the else block with an empty list.
+                this means the expression starts with an 'close'
+                parenthesis or there is an orphaned 'close' parenthesis
+                """
                 if len(stack) == 0:
                     return False
 
@@ -22,4 +26,8 @@ class ValidParenthesis:
                 if brackets_map[prev_bracket] != ch:
                     return False
 
+        """ stack should be empty at the end of the loop.
+            this means for each 'open' parenthesis, there
+            is a matching 'close' parenthesis
+        """
         return len(stack) == 0
