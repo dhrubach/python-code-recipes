@@ -25,7 +25,7 @@ class TestReversePolishNotation:
 
     def test_equation_4(self):
         rpn = ReversePolishNotation()
-        tokens = ["10", "6", "+"]
+        tokens = ["10", "6", "-"]
 
         ans = rpn.evaluate(tokens)
-        assert ans == 16
+        assert ans == 4
