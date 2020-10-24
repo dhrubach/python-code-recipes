@@ -4,6 +4,7 @@
 
 -   [Min Stack](https://leetcode.com/problems/min-stack/)
 -   [Valid Parenthesis](https://leetcode.com/problems/valid-parentheses/)
+-   [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)
 
 ## medium
 
