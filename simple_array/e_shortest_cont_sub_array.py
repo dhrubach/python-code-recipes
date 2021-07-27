@@ -3,11 +3,12 @@
 # Difficulty Level : Easy
 # URL : https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
 ############################################################################
+from typing import List
 
 
 class ShortestSubArray:
     # runtime - 76.59%, memory - 52.05%
-    def findUnsortedSubarray(self, nums: [int]) -> (int, [int]):
+    def findUnsortedSubarray(self, nums: List[int]) -> int:
         if not nums:
             return 0
 
@@ -29,13 +30,13 @@ class ShortestSubArray:
                 start = index if start == -1 else start
                 end = index
 
-        return (end - start + 1 if start != -1 else 0, sarr[end:start])
+        return end - start + 1 if start != -1 else 0
 
-    def findUnsortedSubarray_concise(self, nums: [int]) -> int:
+    def findUnsortedSubarray_concise(self, nums: List[int]) -> int:
         res = [i for (i, (a, b)) in enumerate(zip(nums, sorted(nums))) if a != b]
         return 0 if not res else (res[-1] - res[0] + 1)
 
-    def findUnsortedSubarray_no_sort(self, nums: [int]) -> int:
+    def findUnsortedSubarray_no_sort(self, nums: List[int]) -> int:
         start, end = 0, len(nums) - 1
 
         """ 'start' is the first index position where a number

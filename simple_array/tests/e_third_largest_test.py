@@ -1,4 +1,4 @@
-from simple_array.third_largest import ThirdLargestNumber
+from simple_array.e_third_largest import ThirdLargestNumber
 
 
 class TestThirdLargestNumber:

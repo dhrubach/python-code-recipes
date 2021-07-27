@@ -3,12 +3,13 @@
 # Difficulty Level : Easy
 # URL : https://leetcode.com/problems/third-maximum-number/
 ############################################################
+from typing import List
 
 
 class ThirdLargestNumber:
     # runtime -> 97.90%, memory -> 83.47%
     # complexity -> time O(n), space O(1)
-    def find(self, nums: [int]) -> int:
+    def find(self, nums: List[int]) -> int:
         if len(nums) < 3:
             return max(nums)
 

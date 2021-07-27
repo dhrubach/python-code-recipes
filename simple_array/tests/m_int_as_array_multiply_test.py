@@ -1,4 +1,4 @@
-from simple_array.int_as_array_multiply import MultiplyArray
+from simple_array.m_int_as_array_multiply import MultiplyArray
 
 
 class TestMultiplyArray:

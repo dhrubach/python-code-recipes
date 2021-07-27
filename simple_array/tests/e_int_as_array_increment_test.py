@@ -1,4 +1,4 @@
-from simple_array.int_as_array_increment import IncrementArray
+from simple_array.e_int_as_array_increment import IncrementArray
 
 
 class TestIncrementArray:

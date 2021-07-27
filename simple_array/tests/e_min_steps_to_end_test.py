@@ -1,4 +1,4 @@
-from simple_array.min_steps_to_end import MinimumStepsToEnd
+from simple_array.e_min_steps_to_end import MinimumStepsToEnd
 
 
 class TestMinimumStepsToEnd:

@@ -1,4 +1,4 @@
-from simple_array.advance_by_offsets import AdvanceByOffsets
+from simple_array.e_advance_by_offsets import AdvanceByOffsets
 
 
 class TestAdvanceByOffsets:
