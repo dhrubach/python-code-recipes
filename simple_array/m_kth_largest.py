@@ -4,10 +4,11 @@
 # URL : https://leetcode.com/problems/kth-largest-element-in-an-array/
 ######################################################################
 from heapq import heapify, heappop
+from typing import List
 
 
 class KLargestElement:
-    def find_bubble_sort(self, nums: [int], k: int) -> int:
+    def find_bubble_sort(self, nums: List[int], k: int) -> int:
         """ using bubble sort
             complexity : O(nk)
                 -> outer loop `k` times, inner loop `n` times
@@ -34,7 +35,7 @@ class KLargestElement:
         """ return kth largest element from the end """
         return nums[len(nums) - k]
 
-    def find_heap(self, nums: [int], k: int) -> int:
+    def find_heap(self, nums: List[int], k: int) -> int:
         """ using heap
             complexity : O(n + k log n)
                 -> O(n) for creating the heap

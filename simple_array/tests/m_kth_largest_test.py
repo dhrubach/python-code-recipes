@@ -1,4 +1,4 @@
-from simple_array.kth_largest import KLargestElement
+from simple_array.m_kth_largest import KLargestElement
 
 
 class TestKLargestElement:

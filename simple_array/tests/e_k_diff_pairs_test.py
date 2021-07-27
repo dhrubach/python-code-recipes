@@ -1,4 +1,4 @@
-from simple_array.k_diff_pairs import KDiffPairs
+from simple_array.e_k_diff_pairs import KDiffPairs
 
 
 class TestKDiffPairs:

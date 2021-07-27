@@ -4,11 +4,12 @@
 # URL : https://leetcode.com/problems/k-diff-pairs-in-an-array/
 ###############################################################
 from collections import Counter
+from typing import List
 
 
 class KDiffPairs:
     # runtime -> 93.76%, memory -> 8.49%
-    def findPairs(self, nums: [int], k: int) -> int:
+    def findPairs(self, nums: List[int], k: int) -> int:
         if k > 0:
             """create a list where each element is k-distance
             from corresponding element in the input list
